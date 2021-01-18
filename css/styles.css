@@ -2,3 +2,66 @@
 font-family: 'Lora', serif;
 font-family: 'Raleway', sans-serif;
 */
+:root {
+    --text-color: rgb(22, 22, 22);
+    --primary-color-100: #1D9FC7;
+    --primary-color-200: #065F7A;
+    --secondary-color-100: #C7B90A;
+    --secondary-color-200: #7A720C;
+    --action-color: #C7325D;
+    --overlay-color: rgba(0,0,0,0.3);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    border-bottom: 1px solid grey;
+}
+
+/* Nav Bar */
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+nav .container ul a {
+    padding: 0 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .container ul a.btn,
+nav .container ul a.btn:visited {
+    text-decoration: none;
+    color: var(--primary-color-100);
+    padding: 1em 2em !important;
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border: 1px solid var(--primary-color-100);
+}
