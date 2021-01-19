@@ -304,3 +304,56 @@ nav .container ul a.btn:hover {
 #solutions .container .btn-quote {
     margin-bottom: 100px;
 }
+
+/* Footer section */
+footer {
+    height: 300px;
+    background-color: var(--text-color);
+    color: #f6f6f6;
+}
+footer .container {
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+footer .container div {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer .container div h4 {
+    font-size: 1.6rem;
+    font-family: "Lora", sans-serif;
+    margin-bottom: 1rem;
+}
+footer .container div p {
+    margin-bottom: 1rem;
+    color: #b6b6b6;
+}
+
+footer .container div .social-links {
+    width: 100%;
+}
+
+footer .container div .social-links a {
+    display: inline-block;
+    color: var(--secondary-color-100);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondary-color-100);
+    border-radius: 3px;
+    margin: 0 5px;
+}
+footer .container div .social-links a:hover {
+    background-color: var(--secondary-color-100);
+    color: #f6f6f6;
+}
+
+.social-links a i {
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    transform: translateY(20%);
+}
