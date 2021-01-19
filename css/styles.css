@@ -145,7 +145,7 @@ nav .container ul a.btn:hover {
 
 /* Services Section */
 .services {
-    background-color: #bebebe;
+    background-color: #a9c5ce;
 }
 .services img {
     width: 100%;
@@ -168,3 +168,68 @@ nav .container ul a.btn:hover {
 .services .container div p {
     line-height: 1.5;
 }
+
+/* Subscribe Section */
+.subscribe {
+    background-image: url("/images/subscribe_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 100px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.subscribe .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    z-index: -1;
+}
+
+.subscribe .container {
+    color: #f6f6f6;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subscribe .container h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.subscribe .container h3 span {
+    color: var(--secondary-color-100);
+}
+
+.form-control {
+    display: inline-block;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.form-control input[type=email] {
+    outline: none;
+    border: none;
+    padding: 1em;
+    width: 300px;
+}
+
+.form-control button {
+    border: none;
+    outline: none;
+    background-color: var(--action-color);
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: #f6f6f6;
+    cursor: pointer;
+}
+.form-control button:hover {
+    background-color: #86233f;
+}
+
