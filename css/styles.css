@@ -142,3 +142,29 @@ nav .container ul a.btn:hover {
     box-shadow: 15px -15px 1px 1px var(--secondary-color-100);
     color: #f6f6f6;
 }
+
+/* Services Section */
+.services {
+    background-color: #bebebe;
+}
+.services img {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.services .container {
+    margin: auto;
+    align-items: flex-start;
+}
+.services .container div {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.services .container div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.services .container div p {
+    line-height: 1.5;
+}
