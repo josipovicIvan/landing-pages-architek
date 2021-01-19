@@ -124,7 +124,7 @@ nav .container ul a.btn:hover {
     margin-bottom: 3rem;
 }
 
-.main .container .btn-quote {
+.btn-quote {
     background-color: var(--secondary-color-100);
     padding: 1em 2em;
     font-size: 1.3rem;
@@ -137,7 +137,7 @@ nav .container ul a.btn:hover {
     transition: all 150ms ease-in-out;
 }
 
-.main .container .btn-quote:hover {
+.btn-quote:hover {
     background-color: var(--action-color);
     box-shadow: 15px -15px 1px 1px var(--secondary-color-100);
     color: #f6f6f6;
@@ -233,3 +233,74 @@ nav .container ul a.btn:hover {
     background-color: #86233f;
 }
 
+/* Solutions Section */
+#solutions {
+    background-color: #a9c5ce;
+    height: 100vh;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#solutions .container {
+    flex-direction: column;
+    height: 100%;
+}
+
+.solutions {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions .card {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #d1e3e9;
+}
+
+.solutions .card h3 {
+    font-family: 'Lora', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #034153;
+}
+
+.solutions .card p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.solutions .card:nth-child(2) {
+    margin: 0 30px;
+}
+
+.solutions .card .read-more-btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: var(--action-color);
+    color: #f6f6f6;
+    font-weight: bold;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.solutions .card .read-more-btn:hover {
+    background-color: #86233f;
+}
+
+#solutions .container .btn-quote {
+    margin-bottom: 100px;
+}
