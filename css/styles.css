@@ -55,13 +55,24 @@ nav .container ul a {
     text-transform: uppercase;
 }
 
+nav .container ul a:hover,
+nav .container ul a:focus {
+    border-bottom: 1px solid var(--primary-color-100);
+}
+
 nav .container ul a.btn,
 nav .container ul a.btn:visited {
     text-decoration: none;
-    color: var(--primary-color-100);
+    font-weight: 700;
+    color: #f6f6f6;
+    background-color: var(--action-color);
     padding: 1em 2em !important;
     margin-left: 10px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    border: 1px solid var(--primary-color-100);
+    border: 1px solid var(--action-color);
+    transition: background-color 200ms ease-in;
+}
+nav .container ul a.btn:hover { 
+    background-color: #86233f;
 }
