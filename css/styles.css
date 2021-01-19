@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif;
     --secondary-color-100: #C7B90A;
     --secondary-color-200: #7A720C;
     --action-color: #C7325D;
-    --overlay-color: rgba(0,0,0,0.3);
+    --overlay-color: rgba(0,0,0,0.7);
 }
 
 *,
@@ -30,12 +30,7 @@ ul {
     list-style-type: none;
 }
 
-nav {
-    border-bottom: 1px solid grey;
-}
-
-/* Nav Bar */
-nav .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding:0 2rem;
@@ -44,6 +39,11 @@ nav .container {
     align-items: center;
 }
 
+nav {
+    border-bottom: 1px solid grey;
+}
+
+/* Nav Bar */
 nav .container ul {
     display: flex;
 }
@@ -75,4 +75,70 @@ nav .container ul a.btn:visited {
 }
 nav .container ul a.btn:hover { 
     background-color: #86233f;
+}
+
+/* Hero Section */
+.main {
+    background-image: url("/images/hero_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 81px);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    z-index: -1;
+}
+
+.main .container {
+    height: 100%;
+    flex-direction: column;
+    color: #f6f6f6;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .container h1 {
+    font-family: "Lora", sans-serif;
+    font-style: italic;
+    font-size: 5rem;
+}
+.main .container h1 span {
+    color: var(--secondary-color-100);
+}
+
+.main .container p {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    font-family: "Lora", sans-serif;
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+}
+
+.main .container .btn-quote {
+    background-color: var(--secondary-color-100);
+    padding: 1em 2em;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: var(--text-color);
+    box-shadow: -15px 15px 1px 1px var(--action-color);
+    transition: all 150ms ease-in-out;
+}
+
+.main .container .btn-quote:hover {
+    background-color: var(--action-color);
+    box-shadow: 15px -15px 1px 1px var(--secondary-color-100);
+    color: #f6f6f6;
 }
