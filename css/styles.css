@@ -415,3 +415,25 @@ footer .container div .contact-btn:hover {
     background-color: #f6f6f6;
     color: var(--action-color);
 }
+
+footer .pixel-footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: rgb(49, 49, 49);
+    color: #f6f6f6;
+    text-align: center;
+}
+
+footer .pixel-footer a {
+    display: block;
+    margin-top: 10px;
+    color: rgb(0, 160, 99);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+footer .pixel-footer a:hover {
+    color: rgb(0, 221, 136);
+}
+footer .pixel-footer a span {
+    font-weight: bold;
+}
