@@ -437,3 +437,107 @@ footer .pixel-footer a:hover {
 footer .pixel-footer a span {
     font-weight: bold;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .services img{
+     padding-top: 0;
+     padding-bottom: 1rem;
+    }
+
+    .services .container div {
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .services .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .container div {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .services .container div:first-of-type {
+        display: none;
+    }
+
+    #solutions {
+        height: auto;
+    }
+
+    #solutions .container .solutions {
+        flex-direction: column;
+    }
+
+    .solutions .card {
+        width: 100%;
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 800px) {
+    nav .container ul li:nth-child(1),
+    nav .container ul li:nth-child(2) {
+        display: none;
+    }   
+
+    .main .container h1 {
+        text-align: center;
+    }
+
+    footer .container div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    nav .container {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    nav .container ul a.btn {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .container h1 {
+        font-size: 3rem;
+    }
+    
+    .subscribe .container h3 {
+        font-size: 2rem;
+    }
+
+    .form-control input[type=email] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-control button {
+        width: 100%;
+    }
+    footer {
+        height: 100%;
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        height: 100%;
+    }
+    footer .container div {
+        margin: 1rem auto;
+    }
+    footer .container div .social-links {
+        text-align: center;
+    }
+    footer .container div:nth-child(3) {
+        text-align: center;
+    }
+    footer .container div .contact-btn {
+        width: 100%;
+    }
+}
