@@ -5,6 +5,10 @@
     <meta name="author" content="Ivan Josipovic | Pixel CGI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/639513b724.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -15,9 +19,8 @@
         <div class="container">
             <img src="./images/logo.jpg" alt="company logo">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="+15610000000">+1(561)800-5454</a></li>
-                <li><a href="#" class="btn">Free Consultation</a></li>
+                <li><a class="alertBtn">+1(561)800-5454</a></li>
+                <li><a  class="btn alertBtn">Free Consultation</a></li>
             </ul>
         </div>
     </nav>
@@ -25,15 +28,15 @@
     <main class="main">
         <div class="overlay"></div>
         <div class="container">
-            <h1>The <span>Future</span> is Here!</h1>
-            <p>Where ideas meets skills</p>
-            <a href="#" class="btn btn-quote">Free design</a>
+            <h1 class="animate__animated animate__fadeInLeft">The <span>Future</span> is Here!</h1>
+            <p class="animate__animated animate__fadeInRight animate__delay-1s">Where ideas meets skills</p>
+            <a class="btn btn-quote animate__animated animate__fadeIn animate__delay-2s alertBtn">Free design</a>
         </div>
     </main>
 
     <section class="services">
-        <div class="container">
-            <div>
+        <div class="container" data-scroll>
+            <div class="animate__fadeInLeft">
                 <img src="./images/section_001.jpg" alt="">
             </div>
             <div>
@@ -53,7 +56,7 @@
             <h3>Get your <span>free</span> e-brochure</h3>
             <form action="" class="form-control">
                 <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                <button type="submit">Subscribe</button>
+                <button class="alertBtn">Subscribe</button>
             </form>
             <small>Rest assure that your email is safe 🔒 with us!</small>
         </div>
@@ -61,27 +64,27 @@
 
     <section id="solutions">
         <div class="container">
-            <div class="solutions">
+            <div class="solutions" data-scroll>
                 <div class="card">
                     <img src="./images/interior_design.jpg" alt="">
                     <h3>Interior Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, veritatis.</p>
-                    <a href="#" class="read-more-btn">Read More</a>
+                    <a class="read-more-btn alertBtn">Read More</a>
                 </div>
                 <div class="card">
                     <img src="./images/exterior_design.jpg" alt="">
                     <h3>Exterior Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quo.</p>
-                    <a href="#" class="read-more-btn">Read More</a>
+                    <a class="read-more-btn alertBtn">Read More</a>
                 </div>
                 <div class="card">
                     <img src="./images/landscape_design.jpg" alt="">
                     <h3>Landscape Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorum!</p>
-                    <a href="#" class="read-more-btn">Read More</a>
+                    <a class="read-more-btn alertBtn">Read More</a>
                 </div>
             </div>
-            <a href="#" class="btn-quote">Contact Us!</a>
+            <a class="btn-quote alertBtn ">Contact Us!</a>
         </div>
     </section>
 
@@ -91,8 +94,8 @@
                 <h4>Stay Tuned</h4>
                 <p>Connect with us and stay in the loop.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="alertBtn"><i class="fab fa-facebook-f"></i></a>
+                    <a class="alertBtn"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div>
@@ -100,20 +103,27 @@
                 <p>Be the first to hear about our offers.</p>
                 <form action="" class="footer-form">
                     <input type="email" name="email" id="footerEmail" placeholder="Email" required>
-                    <button type="submit"><i class="fas fa-chevron-right"></i></button>
+                    <button class="alertBtn"><i class="fas fa-chevron-right"></i></button>
                 </form>
             </div>
             <div>
                 <h4>Contact Us</h4>
                 <p>Questions? We've got answers. Try us.</p>
-                <a href="#" class="contact-btn">Email us</a>
+                <a class="contact-btn alertBtn">Email us</a>
             </div>
         </div>
         <div class="pixel-footer">
             <p>Designed by</p><a href="https://pixelcgi.com" target="_blank"><span>Pixel CGI</span> - Ivan Josipovic</a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+    ScrollOut({ 
+        threshold: 0.4,
+        once: true
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
